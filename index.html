@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YZ - What's happening now</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <h1>YZ</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">🔍</span>
+                            <span class="nav-text">Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">🔔</span>
+                            <span class="nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">✉️</span>
+                            <span class="nav-text">Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon">👤</span>
+                            <span class="nav-text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="yz-btn primary">YZ</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Home</h2>
+                <div class="header-tabs">
+                    <button class="tab active">For you</button>
+                    <button class="tab">Following</button>
+                </div>
+            </header>
+
+            <!-- Compose YZ -->
+            <div class="compose-section">
+                <div class="compose-container">
+                    <div class="avatar">
+                        <img src="https://via.placeholder.com/40/4299e1/ffffff?text=U" alt="User">
+                    </div>
+                    <div class="compose-content">
+                        <textarea placeholder="What's happening?" class="compose-textarea" maxlength="280"></textarea>
+                        <div class="compose-actions">
+                            <div class="compose-tools">
+                                <button class="tool-btn">📷</button>
+                                <button class="tool-btn">🎬</button>
+                                <button class="tool-btn">📊</button>
+                                <button class="tool-btn">😊</button>
+                            </div>
+                            <button class="yz-btn primary">YZ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feed -->
+            <div class="feed" id="feed">
+                <!-- Posts will be dynamically generated here -->
+            </div>
+        </main>
+
+        <!-- Trending Sidebar -->
+        <aside class="trending-sidebar">
+            <div class="trending-container">
+                <h3>What's happening</h3>
+                <div class="trending-item">
+                    <div class="trending-category">Trending in Mexico</div>
+                    <div class="trending-hashtag">#MonstruosConAlma</div>
+                    <div class="trending-posts">87.2K YZs</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Trending in Arts</div>
+                    <div class="trending-hashtag">#GuillermoDelToro</div>
+                    <div class="trending-posts">45.8K YZs</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Trending</div>
+                    <div class="trending-hashtag">#MuseoSoumaya</div>
+                    <div class="trending-posts">23.1K YZs</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Arts & Culture</div>
+                    <div class="trending-hashtag">#CinematicMonsters</div>
+                    <div class="trending-posts">15.7K YZs</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-category">Trending in Mexico City</div>
+                    <div class="trending-hashtag">#CDMX</div>
+                    <div class="trending-posts">12.4K YZs</div>
+                </div>
+            </div>
+
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <div class="follow-suggestion">
+                    <div class="follow-avatar">
+                        <img src="https://via.placeholder.com/40/e53e3e/ffffff?text=GDT" alt="Guillermo del Toro">
+                    </div>
+                    <div class="follow-info">
+                        <div class="follow-name">Guillermo del Toro</div>
+                        <div class="follow-handle">@RealGDT</div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="follow-suggestion">
+                    <div class="follow-avatar">
+                        <img src="https://via.placeholder.com/40/38a169/ffffff?text=MS" alt="Museo Soumaya">
+                    </div>
+                    <div class="follow-info">
+                        <div class="follow-name">Museo Soumaya</div>
+                        <div class="follow-handle">@MuseoSoumaya</div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
